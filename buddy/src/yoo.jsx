@@ -1,6 +1,7 @@
 function Nope() {
+    const user = "Chalo bhaiyaji";
     return(
-        <h2>Nope</h2>
+        <h2>Nope {user}</h2>
     )
 }
 export default Nope;
