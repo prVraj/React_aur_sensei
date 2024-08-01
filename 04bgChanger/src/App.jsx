@@ -10,7 +10,7 @@ function App() {
         // style={{ backgroundColor: "white" }}
       >
         <div
-          className="flex flex-wrap p-2 outline-1 rounded-2xl justify-centergap-2"
+          className="flex flex-wrap justify-center gap-2 p-2 outline-1 rounded-2xl"
           style={{ backgroundColor: "red" }}
         >
           <button
@@ -19,30 +19,31 @@ function App() {
           >
             red
           </button>
-          </div>
-          <div
-            className="flex flex-wrap p-2 outline-1 rounded-2xl justify-centergap-2"
-            style={{ backgroundColor: "blue" }}
+        </div>
+        <div
+          className="flex flex-wrap justify-center gap-2 p-2 outline-1 rounded-2xl"
+          style={{ backgroundColor: "blue" }}
+        >
+          <button
+            className="flex flex-wrap justify-center rounded-md"
+            onClick={() => setColor("blue")}
           >
-            <button
-              className="flex flex-wrap justify-center rounded-md"
-              onClick={() => setColor("blue")}
-            >
-              blue
-            </button>
-            </div>
-            <div
-              className="flex flex-wrap p-2 outline-1 rounded-2xl justify-centergap-2"
-              style={{ backgroundColor: "green" }}
-            >
-              <button
-                className="flex flex-wrap justify-center rounded-md"
-                onClick={() => setColor("green")}
-              >
-                green
-              </button>
-            
-          
+            blue
+          </button>
+        </div>
+        <div
+          className="flex flex-wrap justify-center gap-2 p-2 outline-1 rounded-2xl"
+          style={{ backgroundColor: "green" }}
+        >
+          <button
+            className="flex flex-wrap justify-center rounded-md"
+            onClick={() => setColor("green")}
+          >
+            green
+          </button>
+        </div>
+        <div className="flex flex-wrap justify-center gap-2 p-2 outline-1 rounded-2xl">
+          <button onClick={() => setColor("gray")}></button>
         </div>
       </div>
     </div>
